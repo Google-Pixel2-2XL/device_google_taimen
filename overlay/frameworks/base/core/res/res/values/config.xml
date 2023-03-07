@@ -112,10 +112,6 @@
 
     <!-- Screen brightness when dozing. -->
     <integer name="config_screenBrightnessDoze">13</integer>
-
-    <!-- Default screen brightness setting.
-         Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">98</integer>
     
     <!-- Define that we use a higher screen ratio (18:9) than standard (16:9) -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
