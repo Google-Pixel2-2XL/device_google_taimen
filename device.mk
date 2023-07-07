@@ -129,11 +129,11 @@ endif
 
 #IMU calibration
 PRODUCT_PROPERTY_OVERRIDES += \
-  persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
+    persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
 
 # Vibrator HAL
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.vibrator.hal.click.duration=10 \
-  ro.vibrator.hal.tick.duration=4 \
-  ro.vibrator.hal.heavyclick.duration=12
+    ro.vibrator.hal.click.duration=10 \
+    ro.vibrator.hal.tick.duration=4 \
+    ro.vibrator.hal.heavyclick.duration=12
 
