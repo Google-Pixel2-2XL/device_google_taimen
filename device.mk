@@ -137,3 +137,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.vibrator.hal.tick.duration=4 \
   ro.vibrator.hal.heavyclick.duration=12
 
+# Havoc-OS
+PRODUCT_SYSTEM_PROPERTIES += \
+  ro.havoc.device.name=Pixel 2XL \
+  ro.havoc.group.url=https://t.me/arprojectsupport \
+  ro.havoc.maintainer=Asriadi Rahim \
+  ro.havoc.maintainer.username=asriadirahim
