@@ -16,7 +16,7 @@ rm -rf packages/apps/GcamMod
 
 # Tree Dependencies
 git clone --depth=1 https://github.com/PixelExperience-Devices/device_google_wahoo.git -b thirteen device/google/wahoo
-git clone --depth=1 https://github.com/PixelExperience-Devices/device_google_wahoo.git -b thirteen kernel/google/wahoo
+git clone --depth=1 https://github.com/PixelExperience-Devices/kernel_google_wahoo.git -b thirteen kernel/google/wahoo
 git clone --depth=1 https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_google_taimen.git -b thirteen vendor/google/taimen
 
 # Common Hardware Qcom
