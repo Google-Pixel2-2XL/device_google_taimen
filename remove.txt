@@ -1,0 +1,12 @@
+kernel/google/wahoo
+device/google/wahoo
+vendor/google/taimen
+hardware/qcom/audio
+hardware/qcom/camera
+hardware/qcom/display
+hardware/qcom/gps
+hardware/qcom/data/ipacfg-mgr
+hardware/qcom/media
+hardware/qcom/wlan
+hardware/lineage/compat
+packages/apps/GcamMod
