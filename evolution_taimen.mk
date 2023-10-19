@@ -22,10 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # EvolutionX Specific Flags
-EVO_BUILD_TYPE := OFFICIAL
+EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_MINI_GAPPS := true
+TARGET_IS_PIXEL := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/device.mk)
