@@ -5,6 +5,19 @@ TARGET_SCREEN_WIDTH := 1440
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# GMS
+WITH_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_PRIVAPP_ENFORCEMENT := false
+
+# Rising
+RISING_BUILDTYPE := COMMUNITY
+RISING_MAINTAINER := SleepQueen
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USE_PIXEL_FINGERPRINT := false
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
