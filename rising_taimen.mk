@@ -2,29 +2,28 @@
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit risingOS vendor stuffs
+$(call inherit-product, vendor/rising/config/rising.mk)
 
-# GMS
-WITH_GMS := true
-TARGET_USE_GOOGLE_TELEPHONY := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_PRIVAPP_ENFORCEMENT := false
-
-# Rising
-RISING_BUILDTYPE := COMMUNITY
+# Device Identifiers
 RISING_MAINTAINER := SleepQueen
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USE_PIXEL_FINGERPRINT := false
-TARGET_EXCLUDES_AUDIOFX := true
+RISING_CHIPSET := msm8998
+RISING_BUILDTYPE := COMMUNITY
+INLINE_KERNEL_BUILDING := true
+TARGET_SHIPS_FIRMWARE := true
+
+# Gms apps
+WITH_GMS := true
+TARGET_ENABLE_PIXEL_FEATURES := true
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
--include device/google/taimen/device-lineage.mk
+-include device/google/taimen/device-rising.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_taimen
+PRODUCT_NAME := rising_taimen
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
 PRODUCT_RESTRICT_VENDOR_FILES := false

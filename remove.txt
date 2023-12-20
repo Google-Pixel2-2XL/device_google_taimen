@@ -1,9 +1,0 @@
-hardware/qcom/audio
-hardware/qcom/camera
-hardware/qcom/display
-hardware/qcom/gps
-hardware/qcom/data/ipacfg-mgr
-hardware/qcom/media
-hardware/qcom/wlan
-hardware/lineage/compat
-packages/apps/GoogleCamera
